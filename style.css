@@ -1,0 +1,287 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+nav h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd369;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 50px;
+}
+
+.hero-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.hero-text button {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff6a00aa;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff6a00;
+  box-shadow: 0 0 25px #ee0979aa;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about img {
+  border-radius: 50%;
+  border: 3px solid #ff6a00;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 0 20px #ee0979aa;
+}
+
+.about p {
+  max-width: 600px;
+  color: #ccc;
+  text-align: justify;
+}
+
+/* Skills */
+.skills {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2d2d44, #1e1e2f);
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skills ul li {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skills ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff6a00aa;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-item {
+  background: #2d2d44;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #ff6a00aa;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-item h3 {
+  margin: 15px 0;
+}
+
+.portfolio-item a {
+  display: inline-block;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.portfolio-item a:hover {
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+}
+
+.contact button {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff6a00aa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #2d2d44;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
